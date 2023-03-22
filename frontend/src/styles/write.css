@@ -1,0 +1,73 @@
+.write {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    min-height: calc(100vh - 100px);
+    width: 60%;
+}
+
+.write * {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+.write__form {
+    font-size: 20px;
+}
+
+.write__title, .write__text {
+    border: none;
+    margin: 20px;
+    padding-left: 10px;
+    width: 100%;
+    outline: none;
+    opacity: 0.7;
+}
+
+.write__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.write__text {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.write__title:focus, .write__text:focus {
+    border-left: solid 2px var(--color--GREY-800);
+}
+
+.write__button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.write__button button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--color--BLUE-700);
+    cursor: pointer;
+}
+
+.write__button--publish {
+    background-color: var(--color--GREEN-600) !important;
+}
+
+.write__publish:hover {
+    background-color: var(--color--GREEN-700);
+}
+
+.write__info {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color--CHARCOAL-300);
+    font-style: italic;
+    right: 0;
+    margin: 40px 0;
+    font-size: 1rem;
+}
